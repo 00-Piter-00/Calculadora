@@ -101,9 +101,19 @@ function adição() {
     res.innerHTML = `${txtn1} ${s}`
 }
 function subtração() {
-    cel = 2
-    s = '-'
-    res.innerHTML = `${txtn1} ${s}`
+    if (txtn2 == '' && cel == 2) {
+        txtn2 += '-'
+        res.innerHTML = `${txtn1} ${s} ${txtn2}`
+    }
+    if (txtn1 != '' && cel == 1) {
+        cel = 2
+        s = '-'
+        res.innerHTML = `${txtn1} ${s}`
+    }
+    if (txtn1 == '') {
+        txtn1 += '-'
+        res.innerHTML = `${txtn1}`
+    }
 }
 function mutiplicação() {
     cel = 2
