@@ -28,8 +28,8 @@ body, html {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -150px;
-    margin-left: -150px;
+    margin-top: -200px;
+    margin-left: -175px;
 }
 .botão {
     font-family: 'Courier New', Courier, monospace;
