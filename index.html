@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="container">
+        <div id="button">
+            <div id="res"></div>
+            <div>
+                <input type="button" value="7" class="botão" id="7" onclick="sete()">
+                <input type="button" value="8" class="botão" id="8" onclick="oito()">
+                <input type="button" value="9" class="botão" id="9" onclick="nove()">
+                <input type="button" value="+" class="botão" id="adição" onclick="adição()">
+                <br>
+                <input type="button" value="4" class="botão" id="4" onclick="quatro()">
+                <input type="button" value="5" class="botão" id="5" onclick="cinco()">
+                <input type="button" value="6" class="botão" id="6" onclick="seis()">
+                <input type="button" value="-" class="botão" id="subtração" onclick="subtração()">
+                <br>
+                <input type="button" value="1" class="botão" id="1" onclick="um()">
+                <input type="button" value="2" class="botão" id="2" onclick="dois()">
+                <input type="button" value="3" class="botão" id="3" onclick="tres()">
+                <input type="button" value="*" class="botão" id="multiplicação" onclick="mutiplicação()">
+                <br>
+                <input type="button" value="C" class="botão" id="reset" onclick="reset()">
+                <input type="button" value="0" class="botão" id="0" onclick="zero()">
+                <input type="button" value="=" class="botão" id="resultado" onclick="somar()">
+                <input type="button" value="/" class="botão" id="divisão" onclick="divisão()">
+            </div> 
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
