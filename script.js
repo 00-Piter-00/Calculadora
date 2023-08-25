@@ -149,5 +149,13 @@ function somar() {
 }
 
 function reset() {
-    location.reload()
+    //location.reload()
+    cel = 1
+    txtn1 = ''
+    txtn2 = ''
+    n1 = ''
+    n2 = ''
+    s = ''
+    r = ''
+    res.innerHTML = ``
 }
