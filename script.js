@@ -130,26 +130,37 @@ function somar() {
     var n1 = Number(txtn1)
     var n2 = Number(txtn2)
     var r = ''
-    if (s == '+') {
-        r = n1 + n2
-        res.innerHTML = `${n1} ${s} ${n2} = ${r}`
-    }
-    if (s == '-') {
-        r = n1 - n2
-        res.innerHTML = `${n1} ${s} ${n2} = ${r}`
-    }
-    if (s == '*') {
-        r = n1 * n2
-        res.innerHTML = `${n1} ${s} ${n2} = ${r}`
-    }
-    if (s == '/') {
-        r = n1 / n2
-        res.innerHTML = `${n1} ${s} ${n2} = ${r}`
-    }
+    if (txtn1 == '' || s == '') {
+        window.alert('Essa operação é inválida, verifique os números e tente novamente')
+        cel = 1
+        txtn1 = ''
+        txtn2 = ''
+        n1 = ''
+        n2 = ''
+        s = ''
+        r = ''
+        res.innerHTML = ``
+    } else {
+        if (s == '+') {
+            r = n1 + n2
+            res.innerHTML = `${n1} ${s} ${n2} = ${r}`
+        }
+            if (s == '-') {
+            r = n1 - n2
+            res.innerHTML = `${n1} ${s} ${n2} = ${r}`
+        }
+            if (s == '*') {
+            r = n1 * n2
+            res.innerHTML = `${n1} ${s} ${n2} = ${r}`
+        }
+            if (s == '/') {
+            r = n1 / n2
+            res.innerHTML = `${n1} ${s} ${n2} = ${r}`
+        }
+    }       
 }
 
 function reset() {
-    //location.reload()
     cel = 1
     txtn1 = ''
     txtn2 = ''
